@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>taxi.js</title>
+    <script type="module">
+      import "https://thewhodidthis.github.io/cutaway/main.js"
+      import { assert, report } from "https://thewhodidthis.github.io/tapeless/main.js"
+      import createTaxi from "./main.js"
+
+      const { equal } = assert
+      const taxi = createTaxi()
+
+      const result = taxi.turn(30).turn(30).lt(-60)
+      const expected = {
+        data: {
+          x: 0,
+          y: 0,
+          angle: 0,
+          trace: true,
+        }
+      }
+
+      equal
+        .describe("data is a match")
+        .test(JSON.stringify(result), JSON.stringify(expected))
+
+      report()
+    </script>
+  </head>
+  <body></body>
+</html>
