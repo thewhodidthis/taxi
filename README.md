@@ -16,7 +16,7 @@ Source from an import map:
 ```json
 {
   "imports": {
-    "@thewhodidts/taxi": "https://thewhodidthis.github.io/taxi/main.js"
+    "@thewhodidthis/taxi": "https://thewhodidthis.github.io/taxi/main.js"
   }
 }
 ```
