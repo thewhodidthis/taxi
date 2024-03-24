@@ -15,7 +15,7 @@ export default function createTaxi(target = {}, handler) {
   const data = { x: 0, y: 0, angle: 0, trace: true }
   const taxi = {
     get data() {
-      return Object.assign({}, data, { angle: deg(data.angle) })
+      return Object.assign({}, data, { angle: data.angle * DEG })
     },
   }
 
