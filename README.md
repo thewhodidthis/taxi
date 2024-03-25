@@ -30,7 +30,7 @@ npm install thewhodidthis/taxi
 
 ## usage
 
-Initialize with a [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) to then be drawing on. For example,
+Initialize with a [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) to draw on. For example,
 
 ```js
 import createTaxi from "@thewhodidthis/taxi"
