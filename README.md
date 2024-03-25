@@ -57,21 +57,21 @@ const jill = Object.assign({
   },
 }, jack)
 
-// Prepare
+// Prepare.
 jill
-  // Pen color
+  // Set pen color.
   .skin("red")
-  // Move to canvas mid
+  // Move to canvas mid.
   .goto(canvas.width * 0.5, canvas.height * 0.5)
-  // Pen up
+  // Lift pen.
   .pu()
-  // Go back a bit
+  // Go back a bit.
   .bk(half)
-  // Turn right
+  // Turn right.
   .rt(90)
-  // Go back again
+  // Go back again.
   .bk(half)
-  // Pen down
+  // Drop pen.
   .pd()
 
 const tick = (n) => {
@@ -84,6 +84,6 @@ const tick = (n) => {
   tick(n - 1)
 }
 
-// Be square
+// Be square.
 tick(4)
 ```
